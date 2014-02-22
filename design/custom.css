@@ -1,0 +1,1965 @@
+#AwardsPage .Header {
+border-bottom: none;
+}
+#Body {
+margin:15px 10px 0 auto;
+min-height:820px;
+min-width:20%;
+text-align:left;
+width:100%;
+}
+
+#Bookmark_List {
+border-bottom:none;
+}
+
+#Bookmark_List li {
+border-bottom:1px solid #555;
+}
+
+#CommentInfo,.CommentInfo {
+visibility:hidden;
+}
+
+#Content {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+background-size:cover;
+border:1px solid #222;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+margin-left:10px;
+min-width:20%;
+padding:0;
+width:65%;
+border-radius: 5px;
+float:left;
+}
+
+#Content h1 {
+background:url(images/menu_bg2.png);
+background-size:auto 50px;
+}
+
+#Content,#Panel {
+border-radius:5px;
+}
+
+#ConversationForm {
+width:98%!important;
+}
+
+#ConversationForm .TextBox {
+background-color:transparent;
+height:100px;
+margin:8px 0 6px;
+min-height:100px;
+width:100%;
+}
+
+#ConversationForm form {
+background-color:transparent;
+border-radius:2px 2px 2px 2px;
+margin:0;
+padding:20px;
+text-align:right;
+}
+
+#ConversationForm label {
+color:#fff;
+display:block;
+font-size:14px;
+font-weight:700;
+text-align:left;
+}
+
+#DiscussionForm form {
+background-color:transparent;
+border:none;
+color:#87c10b;
+}
+#DiscussionForm textarea {
+width: 98%!important;
+min-height: 300px!important;
+margin: 0 0 6px;
+background: transparent;
+border: none;
+overflow: hidden;
+color: #87c10b;
+font-weight: bold;
+}
+#Foot {
+background: url(images/footer-2.png)transparent!important;
+background-position: bottom center;
+background-repeat: no-repeat!important;
+background-size: 100% auto;
+clear: both;
+color:#ddd;
+font-size: 13px;
+height: 280px;
+line-height: 1;
+margin: 2px 0;
+padding: 0;
+text-align: center;
+width: 100%;
+}
+
+#Foot a {
+color:#182d10;
+}
+
+#Foot div {
+margin:20px auto 0;
+padding:0;
+text-align:center;
+width:100%;
+}
+
+#FootMenu li.NonTab a.SignInPopup,#FootMenu li.NonTab.SignOut a,.Empty,a.Bookmark span,a.Bookmarking span {
+display:none;
+}
+
+#Form_Form {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+border:1px solid #333;
+padding-bottom:10px;
+}
+
+#Head {
+background:none transparent;
+background-repeat:repeat;
+border:none;
+padding-left:10px;
+}
+
+#Head h1 span img {
+height: auto;
+max-width: 900px;
+min-width: 600px;
+width: 100%;
+}
+
+#Head h1 span {
+font-size:50px;
+}
+
+#Menu {
+display:inline-block;
+margin:0 auto;
+vertical-align:bottom;
+}
+
+#Menu a span,#Menu li.Active a span,#Menu li.Highlight a:hover span {
+-moz-border-radius:11px;
+-webkit-border-radius:11px;
+background:#fff;
+border-radius:11px;
+color:#87c10b;
+font-size:11px;
+font-weight:700;
+padding:0 2px;
+text-shadow:none;
+}
+
+#Menu a:hover {
+-moz-box-shadow:0 0 5px #aaa;
+-webkit-box-shadow:0 0 5px #aaa;
+background-image:url(images/menu_bg2.png);
+background-repeat:repeat;
+border:1px solid #222;
+box-shadow:0 0 5px #aaa;
+color:#fff;
+font-size:10pt;
+}
+
+#Menu a:link {
+font-size:10pt;
+text-decoration:none;
+line-height: 2;
+}
+
+#Menu li {
+display:inline-block;
+float:right;
+font-weight:700;
+line-height:1.9;
+list-style:none outside none;
+margin:0;
+padding:1px!important;
+position:relative;
+text-align:center;
+}
+
+#Menu ul {
+background:transparent;
+}
+
+#MessageForm {
+background:#333;
+}
+
+#Panel {
+border-radius:5px;
+float:right!important;
+margin-right:10px;
+width:30%;
+}
+
+#Panel form input#Form_Add.Button {
+-moz-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+background: url(images/contnt.png) repeat scroll 0 0 transparent;
+border: 1px solid #222;
+box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+font-size: 12pt;
+font-weight: 700;
+height: 28px;
+margin: 3px;
+padding: 4px 6px;
+width: auto;
+}
+
+#Panel form input.InputBox {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background:url(images/contnt.png) repeat scroll 0 0 transparent;
+border-color:#222;
+border-image:none;
+border-radius:4px;
+border-style:solid;
+border-width:1px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+color:#87c10b;
+font-size:14px;
+font-weight:700;
+padding:5px;
+text-shadow:0 1px 0 #fff;
+vertical-align:bottom;
+width:72%;
+}
+
+#Panel input.InputBox,.AddPeople textarea.MultiComplete {
+margin-bottom:2px;
+width:188px;
+}
+
+#Popup .Border {
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+background:none repeat scroll 0 0 rgba(82,82,82,0.3);
+border-radius:8px;
+box-shadow:1px 1px 1px 1px #333;
+padding:10px;
+}
+
+#Status {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+padding-bottom:5px;
+}
+
+#ThemeCredit {
+color:#333;
+font-size:9px;
+}
+
+#menu-bar {
+-moz-border-radius:5px;
+-moz-box-shadow:none;
+-webkit-border-radius:5px;
+-webkit-box-shadow:none;
+background:url(images/contnt.png) transparent;
+border:solid 1px #222;
+border-radius:5px;
+box-shadow:none;
+display:inline-block;
+height:35px;
+line-height:100%;
+margin:0;
+padding:0;
+width:98%;
+}
+
+#menu-bar .current a,#menu-bar li:hover > a {
+-moz-box-shadow:0 1px 1px rgba(0,0,0,.2);
+-webkit-box-shadow:0 1px 1px rgba(0,0,0,.2);
+background:transparent;
+box-shadow:0 1px 1px rgba(0,0,0,.2);
+color:#FFF;
+text-shadow:2px 2px 3px #000;
+}
+
+#menu-bar a {
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+color:#87c10b;
+display:block;
+font-family:arial;
+font-size:120%;
+font-style:normal;
+font-weight:700;
+margin:0 auto;
+padding:10px 0 8px 45px;
+text-decoration:none;
+text-shadow:2px 1px 0 #666;
+}
+
+#menu-bar li {
+float:left;
+list-style:none;
+margin:0 6px;
+padding:0 0 7px;
+position:relative;
+}
+
+#menu-bar li:hover > ul,html[xmlns] #menu-bar {
+display:block;
+}
+
+#menu-bar ul {
+-moz-border-radius:5px;
+-moz-box-shadow:2px 2px 3px #222;
+-webkit-border-radius:5px;
+-webkit-box-shadow:2px 2px 3px #222;
+background:none #80b80c;
+border:solid 1px #222;
+border-radius:5px;
+box-shadow:2px 2px 3px #222;
+display:none;
+left:0;
+margin:0;
+padding:0;
+position:absolute;
+top:30px;
+width:240px;
+z-index:100;
+}
+
+#menu-bar ul a {
+color:#FFF!important;
+font-family:arial;
+font-size:16px;
+font-style:normal;
+font-weight:700;
+padding:10px 0 10px 15px;
+text-shadow:2px 2px 3px #000;
+}
+
+#menu-bar ul a:hover {
+-moz-border-radius:0;
+-webkit-border-radius:0;
+background:url(images/menu_bg2.png) rgba(0,0,0,1)!important;
+border-radius:0;
+color:#FFF!important;
+text-shadow:2px 2px 3px #000;
+}
+
+#menu-bar ul li {
+float:none;
+margin:0;
+padding:0;
+}
+
+#menu-bar ul li:first-child > a {
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+}
+
+#menu-bar ul li:hover a,#menu-bar li:hover li a {
+-box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+background:none;
+border:none;
+color:#fff;
+}
+
+#menu-bar ul li:last-child > a {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+}
+
+#menu-bar:after {
+clear:both;
+content:".";
+display:block;
+height:0;
+line-height:0;
+visibility:hidden;
+}
+
+#menu-bar:hover {
+-moz-box-shadow:0 0 5px #aaa;
+-webkit-box-shadow:0 0 5px #aaa;
+background:url(images/menu_bg2.png) transparent;
+border:1px solid #666;
+box-shadow:0 0 5px #aaa;
+}
+
+#translate-this .translate-this-button {
+background:url(images/tt-btn1.png)!important;
+border:1px solid #222;
+border-radius:5px;
+display:inline-block!important;
+float:none!important;
+height:18px;
+overflow:hidden;
+position:relative;
+text-indent:-2000px;
+visibility:visible!important;
+width:180px;
+}
+
+#ttb-paneltop.ttb-paneltop {
+background:transparent!important;
+}
+
+* {
+margin:0;
+padding:0;
+}
+
+* html #menu-bar {
+height:1%;
+}
+
+.Active .TabLink {
+background:#111;
+border:1px solid #222;
+color:#fff;
+}
+
+.Activities .DataList li {
+background:#111;
+border:1px solid #333;
+}
+
+.Activities .Excerpt {
+color:#87c10b;
+font-weight:700;
+}
+
+.Activities .Excerpt a:hover,.Activities .Meta a:hover {
+color:#fff;
+font-size:10pt;
+text-decoration:none;
+}
+
+.Activities .HasPhoto .ItemContent {
+margin-left:53px;
+width:auto;
+}
+
+.Activities a.Title,.Activities .Title,.Activities .Title a {
+font-size:15px;
+}
+
+.Activities a.Title:hover,.Activities .Title:hover,.Activities .Title a:hover {
+color:#87c10b;
+font-size:15px;
+}
+
+.Activities li.Condensed .Excerpt {
+font-size:14px;
+text-align:left;
+text-shadow:0 1px 0 #000;
+width:auto;
+}
+.Activities li.HasPhoto .Title.Name {
+padding: 0;
+font-size: 16px;
+}
+
+.AdminCheck {
+display:inline-block;
+height:22px;
+position:relative;
+right:5px;
+top:20px;
+vertical-align:bottom;
+}
+
+.AptAdImg img {
+border-radius:5px!important;
+box-shadow:1px 0 1px 1px #222!important;
+}
+
+.AttachFileWrapper table.AttachFileContainer tr.FileAttachment td .ProgressBar {
+background-color:transparent;
+border:0;
+font-size:14px;
+height:39px;
+width:126px;
+}
+
+.AttachFileWrapper table.AttachFileContainer tr.FileAttachment td .ProgressBar .ProgressTicker {
+background:url(images/upload-progress-back1.gif)!important;
+background-color:transparent;
+color:#fff;
+font-size:14px;
+height:39px;
+line-height:14px;
+padding-right:2px;
+text-align:right;
+}
+.ac_over {
+background: 
+#afeb73;
+color:#000;
+}
+.ac_results {
+padding: 0;
+border: 1px solid #666;
+border-top: 0;
+background-color:rgba(11, 26, 5,0.9);
+overflow: hidden;
+z-index: 99999;
+}
+.ac_results li {
+margin: 0;
+padding: 5px;
+cursor: default;
+display: block;
+font-size: 12px;
+line-height: 16px;
+overflow: hidden;
+border-bottom: 1px solid #666;
+text-align: left;
+}
+
+.Box {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+border:1px solid #666;
+border-radius:5px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.Box dl dd {
+color:#87c10b;
+font-size:14px;
+margin-left:80px;
+}
+
+.Box dl dt,.Box p,.Activities .Excerpt a,.Activities .Meta a,body.Entry form ul li label,.Preview .Message a,.Preview .Message p a,.MessageList .Message a,.MessageList .Message p span a,.Message span a,iframe#Form_body,textarea#Form_Body.TextBox {
+color:#afeb73;
+}
+
+.Box h4 {
+background-color:transparent;
+background-image:url(images/menu_bg2.png);
+background-repeat:repeat;
+border:1px solid #222;
+box-shadow:none;
+color:#82bb0c;
+font-size:16px;
+text-align:center;
+text-shadow:0 1px 0 #000;
+}
+
+.Box p {
+font-size:100%;
+padding:0 0 4px;
+text-align:center;
+}
+
+.Box.About h4,.Box.CategoryFollowToggleBox h4,.Box.GuestBox h4 {
+background:url(images/menu_bg2.png);
+}
+
+.Box.CategoryFollowToggleBox h4 p a:link {
+color:#87c10b!important;
+}
+
+.Comment {
+color:#87c10b;
+font:family:Arial;
+font-size:12pt!important;
+}
+
+.Content {
+opacity:10;
+}
+
+.Conversation .Item {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+background-size:cover;
+border-bottom:1px solid #222;
+}
+
+
+.DataList .Excerpt a {
+color:#87c10b;
+display:block;
+font-size:11pt;
+}
+
+.DataList .Excerpt a:hover {
+color:#fff;
+}
+
+.DataList .Item {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+border:1px solid #333;
+background-size:cover;
+}
+
+.DataList .Meta {
+color:#ccc;
+font-size: 13px;
+}
+.DataList .Meta span {
+margin-right: 6px;
+}
+
+.DataList .Meta .Announcement {
+background:url(images/contnt.png) repeat scroll 0 0 #4242A9;
+border:1px solid #666;
+border-radius:3px 3px 3px 3px;
+font-size:13px;
+font-weight:700;
+text-shadow:0 1px 0 #000;
+}
+
+.DataList .Meta .Closed {
+background:#bb3c3c;
+font-weight:400;
+text-shadow:0 1px 0 #000;
+}
+
+.DataList .Options,.MessageList .Options {
+margin:7px 4px 0 0;
+}
+
+.DataList .Title a {
+color:#fff;
+font-size:15px;
+font-weight:700;
+text-shadow:0 1px 0 #000;
+}
+
+.DataList a.Delete,.DataList a.Delete:hover {
+-moz-border-radius:0;
+-webkit-border-radius:0;
+border-radius:0;
+color:#fff;
+display:block;
+font-family:arial;
+font-size:25px;
+font-weight:700;
+height:25px;
+line-height:1;
+margin:0;
+padding:2px 4px;
+text-shadow:0 1px 0 #000;
+width:auto;
+}
+
+.DataList a.Title {
+display:block;
+font-size:18px;
+font-weight:700;
+margin:0;
+}
+
+.DataList a.Title:hover {
+color:#fff!important;
+display:block;
+font-weight:700;
+margin:0;
+}
+.DataList .Meta strong {
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+background:#FF0;
+color: #000;
+font-size: 9px;
+font-weight: bold;
+padding: 3px;
+line-height: 1;
+text-shadow: none;
+}
+.DataList .Item {
+margin: 0;
+padding: 6px 0;
+border: 0;
+position: relative;
+border-bottom: 1px solid #666;
+}
+.DataList .Item.Alt {
+background-color: rgba(11, 26, 5,0.9);
+background-image: url(images/contnt.png);
+background-repeat: repeat;
+border-bottom: 1px solid #666;
+background-size: cover;
+}
+
+.DataList li.Mine .Meta a.Category, .DataList .Meta a.Category, .NumberedPager a, .NumberedPager span {
+background: url(images/contnt.png) repeat scroll 0 0 transparent;
+border: 1px solid #666
+text-shadow: 0 1px 0 #000;
+font-size: 12px;
+padding:0 4px;
+border-radius: 40px;
+}
+.DataList li.Mine .Meta a.Category:hover, .DataList .Meta a.Category:hover, .NumberedPager a:hover, .NumberedPager span:hover {
+background: url(images/menu_bg2.png) repeat scroll 0 0 transparent;
+border: 1px solid #222;
+box-shadow: 0 0 5px #aaa;
+-moz-box-shadow: 0 0 5px #aaa;
+-webkit-box-shadow: 0 0 5px #aaa;
+text-shadow: 0 1px 0 #000;
+}
+
+.DismissMessage.Box {
+-moz-box-shadow:1px 1px 1px 1px #333;
+-webkit-box-shadow:1px 1px 1px 1px #333;
+background:url(images/contnt.png) repeat scroll 0 0 rgba(82,82,82,0.3);
+border:1px solid #666;
+border-radius:4px;
+box-shadow:1px 1px 1px 1px #333;
+color:#fff;
+font-size:18px;
+text-shadow:0 1px 0 #000;
+}
+
+.DismissMessage.Info {
+background:transparent;
+border-color:#222;
+border-style:solid;
+border-width:1px;
+font:family:Arial;
+font-size:12pt;
+font-weight:700;
+}
+
+.DismissMessage.Warning {
+-moz-box-shadow:1px 1px 1px 1px #333;
+-webkit-box-shadow:1px 1px 1px 1px #333;
+background:url(images/contnt.png) repeat scroll 0 0 rgba(82,82,82,0.3);
+border:1px solid #666;
+border-radius:4px;
+box-shadow:1px 1px 1px 1px #333;
+color:#fff;
+font-size:20px;
+text-shadow:0 1px 0 #000;
+}
+
+.Drafts .ItemContent a.Title,.Discussions .ItemContent a.Title {
+color:#87c10b;
+max-width:580px;
+}
+.Drafts .Item.Alt .ItemContent a.Title, .Discussions .Item.Alt .ItemContent a.Title, .Categories .Item.Alt .ItemContent a.Title{
+color: rgba(173, 255, 47,0.6);
+}
+
+.Emoticon a:link:hover,.Emoticon img:hover,.Emoticon a:hover,.Emoticon:hover {
+background:#fff!important;
+}
+
+.EmoticonBox {
+-moz-border-bottom-colors:none;
+-moz-border-left-colors:none;
+-moz-border-right-colors:none;
+-moz-border-top-colors:none;
+background-color:#222;
+background-position:center center;
+border-color:0 #AAA #AAA 0;
+border-image:none;
+border-right:1px solid #AAA;
+border-style:none solid solid none;
+border-width:0 1px 1px 0;
+cursor:pointer;
+display:block;
+float:left;
+height:22px;
+overflow:hidden;
+width:22px;
+}
+
+.EmotifyDropdown {
+background-attachment:scroll;
+background-clip:border-box;
+background-color:transparent;
+background-image:url(images/smile.png);
+background-origin:padding-box;
+background-position:0 2px;
+background-repeat:no-repeat;
+background-size:22px auto;
+border-radius:22px 22px 22px 22px;
+cursor:pointer;
+height:22px;
+position:absolute;
+right:0;
+text-align:right;
+top:2px;
+width:22px;
+z-index:10;
+}
+
+.Entry.SingleEntryMethod {
+border-color:#222;
+border-width:1px;
+font:family:Arial;
+}
+
+.Entry.SingleEntryMethod Label,li.CreateAccount {
+color:#FFF;
+text-shadow:0 1px 0 #000;
+}
+
+.Entry.SingleEntryMethod h1 {
+background:url(images/menu_bg2.png);
+border-color:#222;
+border-style:solid;
+border-width:1px;
+color:#fff;
+font:family:Arial;
+}
+
+.Excerpt a {
+color:#ff0;
+font-size:16px!important;
+}
+
+.Excerpt a:hover {
+color:#fff;
+}
+
+.Foot {
+background:transparent;
+background-size:cover;
+border-color:#222;
+}
+
+.Foot .Note {
+color:#87c10b;
+float:left;
+font-weight:700;
+padding:0 0 0 8px;
+}
+
+.FootMenu #Menu a:link,.FootMenu #Menu a:link:hover {
+background:none;
+border:none;
+box-shadow:none;
+font-size:12pt;
+text-decoration:none;
+}
+
+.FootMenu ul#Menu li ul li a,.FootMenu ul#Menu li ul li,.FootMenu ul#Menu li ul,#Foot #FootMenu ul#Menu li ul {
+display:none!important;
+}
+
+.Head #Content {
+float:left;
+margin:0 0 40px;
+width:501px;
+}
+
+.HeadingTabs .SubTab {
+background:none repeat scroll 0 0 transparent;
+display:inline;
+font-size:18px;
+font-weight:700;
+line-height:2.4;
+padding:0;
+}
+
+.Headings .ItemHeading {
+font-size:18px;
+font-weight:700;
+line-height:2;
+}
+
+.Item .Author img {
+background:none repeat scroll 0 0 #222;
+border:2px solid #222;
+box-shadow:1px 1px 2px 1px #666;
+float:left;
+height:40px;
+margin:0 10px 0 0;
+overflow:hidden;
+width:40px;
+}
+
+.Item .Author img:hover {
+background:none repeat scroll 0 0 #222;
+border:none;
+border-radius:43px;
+box-shadow:1px 1px 2px 1px #000;
+float:left;
+height:43px;
+margin:0 10px 0 0;
+overflow:hidden;
+width:43px;
+}
+
+.ItemContent.Category.Read a,span.Breadcrumb.FirstCrumb a {
+background:url(images/contnt.png);
+background-repeat:repeat-x;
+border:1px solid #666;
+border-radius:3px 3px 3px 3px;
+color:#87c10b;
+cursor:pointer;
+display:inline-block;
+font-size:14px;
+font-weight:700;
+margin:0 0 10px;
+padding:3px 6px;
+text-align:center;
+text-shadow:0 1px 0 #000;
+}
+
+.MainForm {
+background: url(images/contnt.png) repeat scroll 0 0 transparent;
+min-width: 320px;
+}
+
+.Menu {
+margin:0 auto;
+position:relative;
+text-align:center;
+vertical-align:bottom;
+width:100%;
+}
+
+.Menu h1 span img {
+height:auto!important;
+margin:0 auto;
+max-width:1000px;
+width:98%;
+}
+
+.MenuTitle {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-moz-user-select:none;
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-position:center center;
+background-repeat:repeat;
+border:1px solid #333;
+border-radius:4px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+color:#FFF;
+font-size:14px;
+font-weight:700;
+padding:8px 4px;
+text-shadow:0 1px 0 #000;
+}
+
+.Message {
+background:transparent;
+background-repeat:repeat;
+color:#fff;
+font:family:Arial;
+font-size:12pt!important;
+font-weight:700;
+}
+
+.Message img {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+border:1px solid #222;
+border-radius:10px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+width:98%!important;
+}
+
+.MessageForm {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background:url(images/contnt.png) transparent;
+border:1px solid #222;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.MessageList .Meta .Author a {
+font-size:14px;
+font-weight:700;
+}
+
+.MessageList .Meta a {
+color:#ccc;
+font-size:14px;
+min-height:40px;
+}
+
+.MessageList .Meta a,span.DateCreated a:hover,table.PreferenceGroup td.Description,.CategoryDescription {
+font-size:14px;
+}
+
+.MessageList .Meta a:hover {
+color:#fff;
+font-size:14px;
+min-height:40px;
+}
+
+.Meta .RSS img {
+height:18px;
+vertical-align:text-bottom;
+width:18px;
+}
+
+.MultipleEntryMethods .Methods {
+background: none transparent;
+border: solid 1px #222;
+color: #fff;
+text-shadow: 0 1px 0 #000;
+}
+.MultipleEntryMethods .Methods {
+border-left:none;
+}
+.Methods {
+text-align: left;
+position: absolute;
+top: 33px;
+bottom: 0;
+right: 0;
+padding: 12px 20px 6px;
+line-height: 1;
+width: auto;
+}
+.NumberedPager span, .NumberedPager a.Highlight {
+color:#ccc;
+}
+.NumberedPager a.Previous, .NumberedPager span.Previous, .NumberedPager a.Next, .NumberedPager span.Next {
+margin-right: 6px;
+font-size: 16px;
+padding: 0px 6px;
+font-family: Arial;
+}
+body.Entry .Methods {
+margin: 0 auto;
+background: none;
+}
+
+.Open .MenuTitle {
+-moz-border-radius-bottomleft:0;
+-moz-border-radius-bottomright:0;
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-border-bottom-left-radius:0;
+-webkit-border-bottom-right-radius:0;
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background:url(images/menu_bg2.png) right -144px no-repeat transparent;
+border:1px solid #666;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+color:#fff;
+}
+
+.P {
+text-align:center;
+}
+
+.PanelDiscussions li a {
+color:#87c10b;
+float:none;
+}
+
+.PanelDiscussions li a:hover,.Preview .Message a:hover,.Preview .Message p a:hover,.MessageList .Message a:hover,.MessageList .Message p span a:hover,.Message span a:hover,.ttb-panel a {
+color:#fff;
+}
+
+.PanelInfo {
+border:1px solid #222;
+}
+
+.PanelInfo .Active {
+background:#80b80c;
+border:none;
+}
+
+.PanelInfo .Meta span,.PanelInfo .Meta strong {
+color:#fff;
+margin-right:11px;
+}
+
+.PanelInfo li {
+background:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+border:none;
+}
+
+.Photo img {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+border:none;
+border-radius:10px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.Popup #Content {
+width:100%!important;
+}
+
+.Popup #ConversationForm form {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+background-size:cover;
+border-radius:0 0 0 0;
+padding:10px;
+}
+
+.Popup #Form_Form {
+background:#fff;
+}
+
+.Popup #Form_Form, .Popup .Legal, .Popup .Content form {
+background: url(images/jkbg.png) transparent!important;
+color:#FFF;
+font-size: 14px;
+font-weight: 700;
+text-shadow: 0 1px 0 #000;
+}
+
+.Popup .Body {
+-moz-border-radius: 5px;
+-moz-box-shadow: 0 0 3px #666;
+-webkit-border-radius: 5px;
+-webkit-box-shadow: 0 0 3px #666;
+background: url(images/jkbg.png)transparent!important;
+border: 1px solid #666;
+border-radius: 5px;
+box-shadow: 0 0 3px #666;
+margin: 0 auto;
+max-height: 800px;
+max-width: 680px;
+overflow: auto;
+padding: 0 0 8px;
+position: relative;
+text-align: left;
+width: 100%;
+}
+
+.Popup .Border {
+display:inline-block;
+margin:0 auto;
+max-width:680px;
+overflow:auto;
+position:relative;
+text-align:left;
+width:515px;
+}
+
+div.Popup .Legal, div.Popup .Content form {
+max-height: 640px;
+overflow: auto;
+padding: 0 10px 10px;
+width: auto;
+}
+.Popup a {
+color:#ccc;
+}
+
+.Popup a:hover {
+text-decoration:none;
+color:#ff0;
+}
+
+.Popup a:hover,.Popup.Popup.SignInPopup a.Close span:hover,.Popup a.Close span:hover {
+color:#82bb0c;
+}
+
+.Popup h1,.Popup h2 {
+background:none #222;
+background-repeat:repeat;
+border:1px solid #666;
+border-radius:0;
+box-shadow:0 0 2px #999;
+color:#87c10b;
+font-size:16px;
+}
+
+.Popup h1, .Popup h2 {
+background: none #0b1a05!important;
+background-repeat: repeat;
+border: 1px solid #666!important;
+border-radius: 0;
+box-shadow: 0 0 2px #999;
+color: #87c10b!important;
+font-size: 18px!important;
+}
+
+.Popup p {
+padding:6px 10px 10px;
+text-align:left;
+}
+
+.Popup,.PanelInfo .Active a {
+color:#ccc;
+font-size:14px;
+}
+.Popup.Popup.SignInPopup .Body {
+background: transparent;
+min-width: 320px;
+width: auto;
+}
+
+.Popup.Popup.SignInPopup .Border {
+display: inline-block;
+margin: 0 auto;
+max-width: 680px;
+overflow: auto;
+position: relative;
+text-align: left;
+min-width: 320px;
+}
+
+.Popup.Popup.SignInPopup a.Close span,.Popup a.Close span {
+color:#fff;
+font-family:arial;
+font-size:22px;
+font-weight:700;
+position:relative;
+top:-10px;
+}
+
+.Preview {
+background:#222!important;
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+background-size:cover;
+border:1px solid #222;
+font-size:14px;
+}
+
+.Preview .Message,.Preview .Message p,.MessageList .Message,.MessageList .Message p span,.Message span {
+color:#87c10b;
+margin:8px 0;
+}
+.Preview .Message a, .Preview .Message p a, .MessageList .Message a, .MessageList .Message p span a, .Message span a{
+color:#ff0;
+}
+.SingleEntryMethod {
+margin:0 auto;
+width:320px;
+}
+
+.TabLink,.TabLink:link,.TabLink:active,.TabLink:visited {
+background-color:transparent;
+background-image:url(images/contnt.png);
+background-repeat:repeat;
+border:1px solid #666;
+color:#87c10b;
+font-size:14px!important;
+text-shadow:0 1px 0 #000;
+}
+
+.TabLink:hover {
+-moz-box-shadow:0 0 5px #aaa;
+-webkit-box-shadow:0 0 5px #aaa;
+background-color:transparent;
+background-image:url(images/menu_bg2.png);
+background-repeat:repeat;
+border:1px solid #444;
+box-shadow:0 0 5px #aaa;
+color:#fff;
+font-size:14px!important;
+}
+
+.Tabs .AdminCheck {
+bottom:5px;
+position:absolute;
+right:5px;
+}
+
+.Tabs .Breadcrumbs {
+background:none repeat scroll 0 0 transparent;
+}
+
+.Tabs li a {
+color:#82bb0c;
+display:inline;
+font-size:17px;
+margin:0;
+text-shadow:0 1px 0 #000;
+}
+
+.Tabs li a span {
+background:#222;
+border-radius:14px;
+color:#fff!important;
+font-size:14px;
+}
+
+.Tabs li a:hover {
+color:#fff;
+display:inline;
+font-size:17px;
+margin:0;
+text-shadow:0 1px 0 #000;
+}
+
+.Tabs,.Headings {
+background:none transparent;
+background-size:50px 50px;
+border:none;
+border-radius:5px 5px 0 0;
+}
+
+.Tabs.Headings.CategoryHeadings,.Tabs.DiscussionsTabs,.Tabs.ActivityTabs,.Tabs.HeadingTabs.DiscussionTabs.FirstPage {
+background-color:transparent;
+background-image:url(images/menu_bg2.png);
+background-repeat:repeat;
+background-size:cover;
+}
+
+.Tabs.ProfileTabs {
+background-color:transparent;
+}
+
+.ToggleFlyout .Flyout {
+background:url(images/contnt.png)scroll 00 rgba(82,82,82,0.4);
+background-repeat:no-repeat;
+background-size:cover;
+border-radius:5px;
+display:none;
+left:0;
+position:absolute;
+top:100%;
+z-index:100;
+}
+
+.ToggleFlyout.Open {
+background:url(images/menu_bg2.png);
+background-size:cover;
+z-index:100;
+}
+
+.UploadProgress {
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+background:url(images/upload-progress-back1.gif)!important;
+border:1px solid #666;
+border-radius:2px;
+color:#fff;
+font-size:14px;
+height:39px;
+margin:10px 0;
+text-shadow:0 1px 1px #000;
+width:200px;
+z-index:0;
+}
+
+.User h1 {
+background:url(images/menu_bg2.png) repeat scroll transparent;
+color:#fff;
+font-size:24px;
+font-weight:700;
+padding:10px;
+text-align:center;
+text-shadow:0 1px 0 #000;
+}
+
+.cleditorMain {
+background-color:transparent!important;
+border: 1px solid #87c10b;
+color:#87c10b;
+font-size: 14px;
+font-weight: 700;
+padding: 0 1px 1px;
+min-height: 300px!important;
+}
+
+.cleditorMain iframe {
+border:none;
+height:auto!important;
+margin:0;
+padding:0;
+min-height: 300px!important;
+}
+
+.cleditorMain textarea {
+-moz-border-radius:0;
+-webkit-border-radius:0;
+background:transparent;
+border:none;
+border-radius:0;
+color:#87c10b;
+font:12pt Arial,Verdana;
+font-weight:700!important;
+height:auto!important;
+margin:0;
+outline:none;
+overflow-y:scroll;
+padding:0;
+resize:none;
+}
+
+.cleditorToolbar {
+background-attachment: scroll;
+background-clip: border-box;
+background-color: #ff0;
+background-image: url(themes/GreenGlass/design/images/menu_bg2.png)!important;
+background-origin: padding-box;
+background-position: 0 0;
+background-repeat: repeat;
+background-size: cover;
+border-bottom: 1px solid #222;
+}
+
+.ttb-cta:hover {
+background:transparent;
+outline:1px solid #7db509!important;
+text-decoration:none!important;
+}
+
+.ttb-panel {
+background:rgba(0,0,0,0.5)!important;
+border:none!important;
+color:#fff;
+display:none;
+font-family:Arial;
+font-size:12px;
+}
+
+.ttb-panel.notranslate {
+background:rgba(0,0,0,0.5);
+border:none!important;
+color:#fff;
+display:none;
+font-family:Arial;
+font-size:12px;
+text-align:left;
+}
+
+.ttb-panel.notranslate div {
+background:rgba(0,0,0,0.5)!important;
+border:none!important;
+font-size:14px!important;
+}
+
+.ttb-panel.notranslate div a {
+background:none transparent!important;
+border:none!important;
+color:#fff;
+font-size:14px!important;
+}
+
+.ttb-panel.notranslate div a:hover {
+background:rgba(0,0,0,0.5)!important;
+border:1px solid #222!important;
+color:#7db509!important;
+outline:1px solid #7db509!important;
+text-decoration:none!important;
+}
+
+.ttb-paneltop {
+background:rgba(0,0,0,0.5)!important;
+border:none!important;
+}
+
+::-webkit-scrollbar {
+width:12px;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius:10px;
+-webkit-box-shadow:inset 0 0 6px #666;
+background:#80b80c;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-track {
+-webkit-border-radius:0;
+-webkit-box-shadow:inset 0 0 6px #666;
+background:rgba(0,0,0,0.9);
+border-radius:0;
+}
+
+NonTab SignOut a {
+font-size:10pt;
+font-weight:700;
+}
+a {
+text-decoration: none;
+color:#9ACD32;
+}
+
+a:hover,a:link:hover,a:hover image,a:link img:hover {
+color:#fff;
+font-weight:700;
+text-shadow:0 1px 0 #000;
+}
+
+a.BigButton {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+background:url(images/contnt.png);
+background-repeat:repeat-x;
+border:1px solid #666;
+border-radius:3px 3px 3px 3px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+color:#87c10b!important;
+cursor:pointer;
+display:block;
+font-size:16px;
+font-weight:700;
+margin:0 0 10px;
+padding:7px;
+text-align:center;
+text-shadow:0 1px 0 #000;
+text-transform: uppercase;
+}
+
+a.BigButton:hover {
+-moz-box-shadow:0 0 5px #aaa;
+-webkit-box-shadow:0 0 5px #aaa;
+background:url(images/menu_bg2.png);
+border:1px solid #222;
+box-shadow:0 0 5px #aaa;
+color:#fff!important;
+text-shadow:0 1px 0 #000;
+}
+
+a.Bookmark,a.Bookmarked,a.Bookmarking {
+background:url(images/star_sprite1.png) top center no-repeat;
+}
+
+a.Bookmarked {
+background-position:center center;
+}
+
+a.Bookmarking {
+background-position:bottom center;
+}
+
+a.Button, .Button, #Menu a, a.Back, a.Cancel, a.Category, .AttachFileLink a,.Aelia div.Tabs .ui-tabs-nav .ui-tabs-active a, .Aelia div.Tabs > ol li.Active a, .Aelia div.Tabs > ul li.Active a  {
+-moz-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+background: url(images/contnt.png);
+background-repeat: repeat-x;
+border: 1px solid #666;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+color: #87c10b;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: 700;
+margin: 0 0 10px;
+padding: 3px 6px;
+text-align: center;
+text-shadow: 0 1px 0 #000;
+background-color: rgba(11, 26, 5,0.6);
+text-transform: uppercase;
+}
+
+
+a.Button.SignInPopup,a.Button.ApplyButton {
+-moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+display:inline-block;
+line-height:100%;
+margin:3px auto;
+padding:6px;
+text-transform: uppercase;
+}
+
+a.Button.SignInPopup:hover,a.Button.ApplyButton:hover,.Button:hover,a.Back:hover,#Menu a:hover,a.Cancel:hover,a.Category:hover,.AttachFileLink a:hover,.ItemContent.Category.Read a:hover,span.Breadcrumb.FirstCrumb a:hover,.Aelia div.Tabs .ui-tabs-nav .ui-tabs-active a:hover, .Aelia div.Tabs > ol li.Active a:hover, .Aelia div.Tabs > ul li.Active a:hover  {
+-moz-box-shadow:0 0 5px #aaa;
+-webkit-box-shadow:0 0 5px #aaa;
+background:url(images/menu_bg2.png);
+border:1px solid #222;
+box-shadow:0 0 5px #aaa;
+color:#fff;
+text-shadow:0 1px 0 #000;
+}
+
+a.Close span {
+color:#fff;
+font-family:arial;
+font-size:22px;
+font-weight:700;
+}
+
+a.Close span:hover {
+color:#87c10b;
+font-size:22px;
+font-weight:700;
+line-height:1;
+padding:0;
+}
+
+a.Permalink {
+color:#ccc;
+font-size:14px;
+font-weight:700;
+}
+
+a.Permalink:hover,a.CommentOption:hover {
+color:#fff;
+font-size:14px!important;
+font-weight:700;
+}
+
+a.ttb-close {
+background:#222!important;
+color:#fff!important;
+font-size:14px!important;
+}
+
+html,body {
+background-attachment:fixed;
+background-clip:border-box;
+background-color:#0b1a05;
+background-image:url(images/jkbg.png);
+background-origin:padding-box;
+background-position:top center;
+background-repeat:no-repeat;
+background-size:cover;
+color:#2e9d01;
+font-weight:700;
+overflow-x:hidden;
+overflow-y:scroll;
+text-shadow:0 1px 0 #000;
+}
+
+body #Head h1 {
+background:transparent;
+border:0;
+display:inline-block;
+font-weight:700;
+margin:0 auto;
+padding:21px 10px 4px 0;
+}
+
+body.Dashboard.Activity #Content{
+width:65%;
+}
+body.add #Content {
+width:97%;
+}
+body.Dashboard.Plugin.PrivacyNotice #Content,body.Dashboard.Plugin.Games #Content{
+width:99%!important;
+} 
+body.Dashboard.Entry #Content form, body.Dashboard.Entry .SignInPopup form {
+min-width: 300px;
+float: none;
+margin: 0 auto;
+}
+
+body.Dashboard.Entry.register .Box {
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+background:hsla(0,0%,0%,0);
+border:none;
+box-shadow:none;
+margin:0 auto;
+min-width:300px;
+}
+
+body.Dashboard.Entry #Content {
+background-color: 
+transparent;
+float: none;
+margin: 0 auto;
+text-align: center;
+width: 360px;
+min-height:585px!important;
+}
+
+body.Dashboard.Entry #Content form {
+padding:10px;
+text-align:left;
+}
+
+body.Dashboard.Entry #Content h1,h1,#DiscussionForm form label,.Activities li.Condensed .Excerpt,.Box .PanelCategories .Heading,.Conversations .Conversation .Message,#MessageForm h2 {
+background-color:transparent;
+color:#FFF!important;
+font-size:16px;
+font-weight:700!important;
+text-align:center;
+text-shadow:0 1px 0 #000;
+}
+
+body.Dashboard.Entry form ul li label.CheckBoxLabel,body.Entry form ul li label.RadioLabel {
+color:#87c10b;
+font-size:14px;
+font-weight:700;
+}
+
+body.Dashboard.Entry li.Buttons input.Button,.SignInPopup li.Buttons input.Button {
+border:1px solid #222;
+color:#82bb0c;
+text-shadow:0 1px 0 #000;
+}
+
+body.Dashboard.Entry li.Buttons input.Button:hover,.SignInPopup li.Buttons input.Button:hover {
+color:#fff;
+text-shadow:0 1px 0 #000;
+}
+
+body.Post #Content,.Message table {
+width:98%;
+}
+
+body.Profile #Content {
+float:left;
+margin-left:10px;
+width:65%;
+}
+
+body.Profile #Form_Invitation ul li label,body.Profile #Form_User ul li label,.Popup form ul li label {
+color:#fff!important;
+display:block;
+font-size:14px;
+font-weight:700;
+margin:10px 0 0;
+text-shadow:0 1px 0 #666;
+}
+
+body.Profile #Form_User ul li label.RadioLabel,body.Profile #Form_User ul li label.CheckBoxLabel,.Popup form ul li label.RadioLabel,.Popup form ul li label.CheckBoxLabel,#Menu li.NonTab,#Menu li.NonTab a {
+font-weight:700;
+}
+
+body.Profile #Panel {
+float:right!important;
+width:30%;
+}
+
+body.Profile .PanelInfo {
+border-bottom:1px solid #222;
+margin:3px 0;
+}
+
+body.Profile .PanelInfo li {
+background: url(images/nav.png)no-repeat;
+border-bottom: 0;
+text-align: center;
+background-size: 100% 100%;
+width: 97%;
+}
+
+body.Profile .PanelInfo li a {
+color:#87c10b;
+float:none;
+text-shadow:0 1px 0 #000;
+}
+
+body.Profile .PanelInfo li:hover {
+background:url(images/menu_bg2.png);
+border-bottom:0;
+text-align:center;
+width:97%;
+}
+
+body.Profile ul.Activities {
+border-top:1px solid #333;
+}
+body#dashboard_entry_password #Content form, body#dashboard_entry_signin #Content form, body#dashboard_entry_index #Content form, .SignInPopup form {
+width: 100%;
+padding: 10px;
+}
+body#dashboard_entry_password #Content, body#dashboard_entry_signin #Content, body#dashboard_entry_index #Content {
+width: 500px;
+}
+body#dashboard_entry_password ul li label.CheckBoxLabel, body#dashboard_entry_signin ul li label.CheckBoxLabel, body#dashboard_entry_index ul li label.CheckBoxLabel, .SignInPopup ul li label.CheckBoxLabel {
+color:#ccc;
+display: inline;
+font-size: 12px;
+font-weight: normal;
+margin: 10px 0 0 10px;
+}
+
+dd.IP a,dt.IP,dd.IP,dt.Visits,dd.Visits,dt.LastActive,dd.LastActive,dd.Joined,dt.Joined {
+display:none;
+visibility:hidden;
+}
+
+dd.Name {
+color:#fff;
+font-size:14pt;
+font-weight:700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color:#fff;
+font-family:"Helvetica Neue",Helvetica,arial,sans-serif;
+font-weight:700;
+margin:0;
+text-shadow:0 1px 0 #000;
+}
+
+iframe#jplayer2 {
+float:right;
+margin:5px 10px;
+position:relative;
+}
+
+input#Form_Go.Button, input#Form_Go.Button:hover {
+border-radius: 14px;
+font-size: 14px;
+font-weight: 700;
+padding: 4px;
+vertical-align: bottom;
+position: relative;
+top: 5px;
+background-size: 100% 100%;
+}
+input.DateBox, input.InputBox, input.SmallInput, textarea, input.DateBox:focus, input.InputBox:focus, input.SmallInput, textarea:focus {
+background: url(images/contnt.png) repeat scroll 0 0 rgba(255,255,255,.7);
+border: 1px solid #666;
+border-radius: 2px 2px 2px 2px;
+color: #000;
+font-size: 15px;
+font-weight: 700;
+margin: 0;
+padding: 3px;
+width: 250px;
+}
+input#Form_Email,input#Form_Password,input.InputBox.BigInput{
+	color:#000!important;
+}
+
+span embed {
+-moz-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
+-o-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
+-webkit-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
+background:none transparent;
+border:15px solid transparent;
+border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
+border-radius:10px!important;
+height:30px!important;
+width:30px!important;
+}
+
+span embed:hover,span embed:focus {
+background:url(images/plasma2.gif)no-repeat!important;
+background-position:center center;
+background-size:35px auto!important;
+box-shadow:none!important;
+}
+
+span.Email a,span.AddComment a {
+color:#87c10b;
+font-size:10pt;
+}
+
+textarea.MultiComplete {
+background:none repeat scroll 0 0 transparent;
+height:20px;
+text-align:left;
+width:100%;
+}
+
+ul#Menu {
+margin:0 auto;
+position:relative;
+}
+
+ul#Menu li ul {
+-moz-border-radius:5px;
+-moz-box-shadow:none;
+-webkit-border-radius:5px;
+-webkit-box-shadow:none;
+background:none transparent;
+background-repeat:no-repeat;
+border:none;
+border-radius:5px;
+box-shadow:none;
+display:none;
+left:0;
+margin:0;
+padding:0;
+position:absolute;
+top:30px;
+visibility:hidden;
+}
+
+ul#Menu li ul li {
+border: none!important;
+float: none;
+font-size: 11pt;
+margin: 0;
+text-align: left;
+text-shadow: 2px 2px 3px #000;
+min-width: 100px;
+width: 100%;
+z-index:9;
+}
+
+ul#Menu li ul li a {
+background:#80b40a;
+border:1px solid #222;
+color:#fff!important;
+font-size:11pt!important;
+font-weight:700;
+margin:0;
+text-align:left!important;
+text-shadow:0 1px 0 #000!important;
+width:100%;
+text-transform: uppercase;
+}
+
+ul#Menu li ul li a:hover {
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+background:rgba(0,0,0,0.8);
+border:1px solid #222;
+border-radius:4px;
+color:#FFF!important;
+text-shadow:2px 2px 5px #000!important;
+}
+
+ul.Flyout.MenuItems {
+background:url(images/contnt.png)no-repeat scroll 0 0 rgba(82,82,82,0.3);
+}
+
+ul.Flyout.MenuItems li a,ul.Flyout.MenuItems li a:hover {
+background:none transparent!important;
+border:none!important;
+}
+
+ul.MessageList .Meta span.Votes {
+display:block;
+left:90%;
+line-height:normal;
+padding:0;
+position:absolute;
+text-align:center;
+}
+
+ul.MessageList li.Item {
+background:url(images/contnt.png);
+background-size:cover;
+}
+ul.token-input-list li input {
+border: 0;
+width: 100px;
+padding: 3px 3px;
+margin: 2px 0;
+font-size: 16px;
+}
+ul.PanelInfo.PanelCategories .Active a{
+	color:#000;
+}
