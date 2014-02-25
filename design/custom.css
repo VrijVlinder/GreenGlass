@@ -1253,7 +1253,7 @@ font-size:14px;
 
 .Preview .Message,.Preview .Message p,.MessageList .Message,.MessageList .Message p span,.Message span {
 color:#87c10b;
-margin:8px 0;
+margin:8px;
 }
 .Preview .Message a, .Preview .Message p a, .MessageList .Message a, .MessageList .Message p span a, .Message span a{
 color:#ff0;
@@ -1628,7 +1628,7 @@ color:#fff!important;
 font-size:14px!important;
 }
 
-html,body {
+body {
 background-attachment:fixed;
 background-clip:border-box;
 background-color:#0b1a05;
