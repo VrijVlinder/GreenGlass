@@ -8,6 +8,13 @@ min-width:20%;
 text-align:left;
 width:100%;
 }
+#Body:after {
+visibility: hidden;
+display: block;
+content: initial;
+clear: both;
+height: 0;
+}
 
 #Bookmark_List {
 border-bottom:none;
@@ -39,8 +46,10 @@ float:left;
 }
 
 #Content h1 {
-background:url(images/menu_bg2.png);
-background-size:auto 50px;
+background: url(images/menu_bg2.png);
+background-size: auto 50px;
+font-size: 20px;
+border-radius: 5px 5px 0 0;
 }
 
 #Content,#Panel {
@@ -70,7 +79,7 @@ text-align:right;
 #ConversationForm label {
 color:#fff;
 display:block;
-font-size:14px;
+font-size:12px;
 font-weight:700;
 text-align:left;
 }
@@ -80,45 +89,47 @@ background-color:transparent;
 border:none;
 color:#87c10b;
 }
-#DiscussionForm textarea {
-width: 98%!important;
+#DiscussionForm textarea, textarea#Form_Body.TextBox {
+width: 100%!important;
 min-height: 300px!important;
 margin: 0 0 6px;
-background: transparent;
-border: none;
+background: #222;
+border: 1px solid #666;
 overflow: hidden;
 color: #87c10b;
 font-weight: bold;
 }
 #Foot {
-background: url(images/footer-2.png)transparent!important;
-background-position: bottom center;
-background-repeat: no-repeat!important;
-background-size: 100% auto;
+background: url(images/footer-2.png)
+transparent!important;
+background-repeat: repeat-x!important;
 clear: both;
 color:#ddd;
 font-size: 13px;
-height: 280px;
-line-height: 1;
+line-height: 100%;
 margin: 2px 0;
-padding: 0;
+padding: 40px 0 70px;
 text-align: center;
 width: 100%;
+height: 100%;
+background-size: 120% 120%;
+min-height: 250px;
 }
-
 #Foot a {
 color:#182d10;
 }
 
 #Foot div {
-margin:20px auto 0;
+margin:0;
 padding:0;
 text-align:center;
 width:100%;
 }
-
+div#Foot a {
+position: relative;
+}
 #FootMenu li.NonTab a.SignInPopup,#FootMenu li.NonTab.SignOut a,.Empty,a.Bookmark span,a.Bookmarking span {
-display:none;
+
 }
 
 #Form_Form {
@@ -158,8 +169,8 @@ vertical-align:bottom;
 -webkit-border-radius:11px;
 background:#fff;
 border-radius:11px;
-color:#87c10b;
-font-size:11px;
+color:#cf0;
+font-size:12px;
 font-weight:700;
 padding:0 2px;
 text-shadow:none;
@@ -173,25 +184,25 @@ background-repeat:repeat;
 border:1px solid #222;
 box-shadow:0 0 5px #aaa;
 color:#fff;
-font-size:10pt;
+font-size:12px;
 }
 
 #Menu a:link {
-font-size:10pt;
+font-size:12px;
 text-decoration:none;
 line-height: 2;
 }
 
 #Menu li {
-display:inline-block;
-float:right;
-font-weight:700;
-line-height:1.9;
-list-style:none outside none;
-margin:0;
-padding:1px!important;
-position:relative;
-text-align:center;
+display: inline-block;
+float: none;
+font-weight: 700;
+line-height: 1.9;
+list-style: none outside none;
+margin: 0;
+padding: 1px!important;
+position: relative;
+text-align: center;
 }
 
 #Menu ul {
@@ -215,7 +226,7 @@ width:30%;
 background: url(images/contnt.png) repeat scroll 0 0 transparent;
 border: 1px solid #222;
 box-shadow: 2px 2px 3px rgba(0,0,0,.5);
-font-size: 12pt;
+font-size: 12px;
 font-weight: 700;
 height: 28px;
 margin: 3px;
@@ -246,7 +257,41 @@ width:72%;
 margin-bottom:2px;
 width:188px;
 }
-
+#Panel .FilterMenu li:first-child, .PanelInfo li:first-child {
+border-top: 1px solid #ddd;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 5px 5px 0 0;
+}
+#Panel .FilterMenu li:last-child, .PanelInfo li:last-child {
+border-bottom: 1px solid #ddd;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 0 0 5px 5px;
+}
+#Panel .PanelInfo li {
+text-align: left;
+color: #9ACD32;
+}
+#Panel .FilterMenu .Active, .PanelInfo .Active {
+background: #cf0!important;
+font-weight: bold;
+}
+#Panel .FilterMenu .Active a, .PanelInfo .Active a {
+color: #000;
+text-shadow: none;
+font-weight: bold;
+}
+#Panel .FilterMenu li, .PanelInfo li, .PanelActivity li {
+background: transparent;
+background-image: url(images/contnt.png);
+background-repeat: repeat;
+border: none;
+padding: 2px 4px;
+color: #cf0;
+}
+.PanelActivity {
+border-top: 0;
+border-bottom: 0;
+}
 #Popup .Border {
 -moz-border-radius:8px;
 -webkit-border-radius:8px;
@@ -455,7 +500,7 @@ font-weight:700;
 
 .Activities .Excerpt a:hover,.Activities .Meta a:hover {
 color:#fff;
-font-size:10pt;
+font-size:12px;
 text-decoration:none;
 }
 
@@ -474,7 +519,7 @@ font-size:15px;
 }
 
 .Activities li.Condensed .Excerpt {
-font-size:14px;
+font-size:12px;
 text-align:left;
 text-shadow:0 1px 0 #000;
 width:auto;
@@ -485,12 +530,14 @@ font-size: 16px;
 }
 
 .AdminCheck {
-display:inline-block;
-height:22px;
-position:relative;
-right:5px;
-top:20px;
-vertical-align:bottom;
+display: inline;
+height: auto;
+position: relative;
+float: left;
+top: 0;
+vertical-align: bottom;
+padding: 2px;
+left: 0;
 }
 
 .AptAdImg img {
@@ -517,8 +564,7 @@ padding-right:2px;
 text-align:right;
 }
 .ac_over {
-background: 
-#afeb73;
+background: #afeb73;
 color:#000;
 }
 .ac_results {
@@ -541,15 +587,15 @@ border-bottom: 1px solid #666;
 text-align: left;
 }
 
-.Box {
--moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
--webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
-background-color:transparent;
-background-image:url(images/contnt.png);
-background-repeat:repeat;
-border:1px solid #666;
-border-radius:5px;
-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+.Box, .BoxFilter.BoxDiscussionFilter, .BoxFilter.BoxActivityFilter {
+-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+background-color: transparent;
+background-image: url(images/contnt.png);
+background-repeat: repeat;
+border: 0;
+border-radius: 5px;
+box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
 }
 
 .Box dl dd {
@@ -559,19 +605,22 @@ margin-left:80px;
 }
 
 .Box dl dt,.Box p,.Activities .Excerpt a,.Activities .Meta a,body.Entry form ul li label,.Preview .Message a,.Preview .Message p a,.MessageList .Message a,.MessageList .Message p span a,.Message span a,iframe#Form_body,textarea#Form_Body.TextBox {
-color:#afeb73;
+color:#cf0;
 }
 
-.Box h4 {
-background-color:transparent;
-background-image:url(images/menu_bg2.png);
-background-repeat:repeat;
-border:1px solid #222;
-box-shadow:none;
+.Box h4, .MessageForm.CommentForm.FormTitleWrapper h2 {
+background-color: 
+transparent;
+background-image: url(images/menu_bg2.png);
+background-repeat: repeat;
+border: 0;
+box-shadow: none;
 color:#82bb0c;
-font-size:16px;
-text-align:center;
-text-shadow:0 1px 0 #000;
+font-size: 16px;
+text-align: center;
+text-shadow: 0 1px 0 #000;
+border-radius: 5px 5px 0 0;
+padding: 4px;
 }
 
 .Box p {
@@ -587,13 +636,34 @@ background:url(images/menu_bg2.png);
 .Box.CategoryFollowToggleBox h4 p a:link {
 color:#87c10b!important;
 }
-
+.BarWrap {
+background:transparent;
+border: 0;
+margin: 0 0 -1px;
+line-height: 0.1;
+}
+.ButtonWrap {
+background-color: #87c10b!important;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+border: 1px solid #222;
+height: 24px;
+width: 24px;
+z-index: 50;
+display: inline-block;
+border-right: 1px solid #222!important;
+}
+.ButtonWrap:hover {
+background-color:#f8f8f8!important;
+cursor: pointer;
+}
 .Comment {
 color:#87c10b;
-font:family:Arial;
-font-size:12pt!important;
+font-size:12px!important;
 }
-
+.CommentForm .FormWrapper {
+padding: 10px;
+}
 .Content {
 opacity:10;
 }
@@ -610,7 +680,7 @@ border-bottom:1px solid #222;
 .DataList .Excerpt a {
 color:#87c10b;
 display:block;
-font-size:11pt;
+font-size:12px;
 }
 
 .DataList .Excerpt a:hover {
@@ -648,10 +718,10 @@ font-weight:400;
 text-shadow:0 1px 0 #000;
 }
 
-.DataList .Options,.MessageList .Options {
-margin:7px 4px 0 0;
+.DataList .Options, .MessageList .Options {
+margin: 0;
+position: relative;
 }
-
 .DataList .Title a {
 color:#fff;
 font-size:15px;
@@ -659,21 +729,20 @@ font-weight:700;
 text-shadow:0 1px 0 #000;
 }
 
-.DataList a.Delete,.DataList a.Delete:hover {
--moz-border-radius:0;
--webkit-border-radius:0;
-border-radius:0;
-color:#fff;
-display:block;
-font-family:arial;
-font-size:25px;
-font-weight:700;
-height:25px;
-line-height:1;
-margin:0;
-padding:2px 4px;
-text-shadow:0 1px 0 #000;
-width:auto;
+.DataList a.Delete, .DataList a.Delete:hover {
+-moz-border-radius:25px;
+-webkit-border-radius:25px;
+color: #fff;
+display: block;
+font-family: arial;
+font-size: 25px!important;
+font-weight: 700;
+height: 25px;
+line-height: 25px!important;
+margin: 0;
+padding:4px!important;
+text-shadow: 0 1px 0 #000;
+border-radius: 25px!important;
 }
 
 .DataList a.Title {
@@ -702,11 +771,11 @@ line-height: 1;
 text-shadow: none;
 }
 .DataList .Item {
-margin: 0;
-padding: 6px 0;
-border: 0;
-position: relative;
-border-bottom: 1px solid #666;
+background-color:rgba(213, 333, 11, 0.1);
+background-image: url(images/contnt.png);
+background-repeat: repeat;
+border: 1px solid #333;
+background-size: cover;
 }
 .DataList .Item.Alt {
 background-color: rgba(11, 26, 5,0.9);
@@ -751,7 +820,7 @@ border-color:#222;
 border-style:solid;
 border-width:1px;
 font:family:Arial;
-font-size:12pt;
+font-size:12px;
 font-weight:700;
 }
 
@@ -865,14 +934,17 @@ padding:0 0 0 8px;
 background:none;
 border:none;
 box-shadow:none;
-font-size:12pt;
+font-size:12px;
 text-decoration:none;
 }
 
 .FootMenu ul#Menu li ul li a,.FootMenu ul#Menu li ul li,.FootMenu ul#Menu li ul,#Foot #FootMenu ul#Menu li ul {
 display:none!important;
 }
-
+.Form-Header .Author .PhotoWrap {
+margin: 10px 0 0 10px;
+display: none;
+}
 .Head #Content {
 float:left;
 margin:0 0 40px;
@@ -895,14 +967,16 @@ line-height:2;
 }
 
 .Item .Author img {
-background:none repeat scroll 0 0 #222;
-border:2px solid #222;
-box-shadow:1px 1px 2px 1px #666;
-float:left;
-height:40px;
-margin:0 10px 0 0;
-overflow:hidden;
-width:40px;
+background: none repeat scroll 0 0 #222;
+border: 2px solid #222;
+-moz-box-shadow: 0px 0px 10px #cf0;
+-webkit-box-shadow: 0px 0px 10px #cf0;
+box-shadow: 0px 0px 10px #cf0;
+float: left;
+height: 40px;
+margin: 0 10px 0 0;
+overflow: hidden;
+width: 40px;
 }
 
 .Item .Author img:hover {
@@ -976,7 +1050,7 @@ background:transparent;
 background-repeat:repeat;
 color:#fff;
 font:family:Arial;
-font-size:12pt!important;
+font-size:12px!important;
 font-weight:700;
 }
 
@@ -1056,7 +1130,54 @@ body.Entry .Methods {
 margin: 0 auto;
 background: none;
 }
-
+.UserBox .Username, .MeBox .Username {
+font-weight: bold;
+vertical-align: top;
+font-size: 14px;
+display: none;
+}
+.MeBox .ProfilePhoto, .MeButton, .UserBox .PhotoWrap, .MeBox .PhotoWrap {
+height: 18px!important;
+width: 18px!important;
+float: left!important;
+vertical-align: bottom;
+padding: 0;
+line-height: 1.3;
+background-color: #87c10b!important;
+}
+.MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
+display: block!important;
+text-decoration: none;
+white-space: nowrap;
+color: #cf0;
+line-height: 1.5!important;
+margin: 0!important;
+font-size: 12px!important;
+text-align: left!important;
+}
+.MenuItems a:hover {
+color: #000!important;
+text-decoration: none;
+background-color: 
+rgba(213, 333, 11, 0.8)!important;
+}
+.MenuItems {
+line-height: 100%;
+font-size: 11px;
+border: 1px solid #666;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+background: transparent;
+padding: 0;
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.MenuItems hr {
+border: 0;
+border-bottom: 0;
+}
 .Open .MenuTitle {
 -moz-border-radius-bottomleft:0;
 -moz-border-radius-bottomright:0;
@@ -1071,9 +1192,39 @@ border-bottom-right-radius:0;
 box-shadow:2px 2px 3px rgba(0,0,0,0.5);
 color:#fff;
 }
+.OptionsTitle {
+user-select: none;
+overflow: hidden;
+padding: 0;
+width: 18px;
+height: 18px;
+display: inline-block;
+vertical-align: middle;
+line-height: 999px;
+overflow: hidden;
+font-size: 0;
+cursor: pointer;
+background-color: #87c10b;
+border-radius: 18px;
+border: 1px solid #999;
+background-position: 1px -101px;
+}
+.OptionsTitle:hover, .Open > .OptionsTitle {
+background-color: #cf0;
+border: 1px solid #000;
+}
+
+.P.PageDescription {
+padding: 10px;
+color: #cf0;
+font-size: 18px;
+}
+.PageTitle .Options {
+height: 10px;
+}
 
 .P {
-text-align:center;
+
 }
 
 .PanelDiscussions li a {
@@ -1099,21 +1250,25 @@ color:#fff;
 margin-right:11px;
 }
 
-.PanelInfo li {
-background:transparent;
-background-image:url(images/contnt.png);
-background-repeat:repeat;
-border:none;
+#Panel .FilterMenu li, .PanelInfo li {
+background: transparent;
+background-image: url(images/contnt.png);
+background-repeat: repeat;
+border: none;
 }
 
 .Photo img {
--moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
--webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
-border:none;
-border-radius:10px;
-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 10px #cf0;
+-webkit-box-shadow: 0px 0px 10px #cf0;
+box-shadow: 0px 0px 10px #cf0;
+border: none;
+border-radius: 10px;
 }
-
+.ProfilePhotoLarge {
+width: 100%;
+max-width: 250px;
+margin: 10px 0 auto;
+}
 .Popup #Content {
 width:100%!important;
 }
@@ -1240,7 +1395,13 @@ font-weight:700;
 position:relative;
 top:-10px;
 }
-
+.PopList .ItemContent:hover {
+background: #000;
+color: #fff;
+}
+.PopList .ItemContent a:hover {
+color: #fff;
+}
 .Preview {
 background:#222!important;
 background-color:transparent;
@@ -1256,7 +1417,7 @@ color:#87c10b;
 margin:8px;
 }
 .Preview .Message a, .Preview .Message p a, .MessageList .Message a, .MessageList .Message p span a, .Message span a{
-color:#ff0;
+color:#CF0;
 }
 .SingleEntryMethod {
 margin:0 auto;
@@ -1404,7 +1565,7 @@ background:transparent;
 border:none;
 border-radius:0;
 color:#87c10b;
-font:12pt Arial,Verdana;
+font:12px Arial,Verdana;
 font-weight:700!important;
 height:auto!important;
 margin:0;
@@ -1477,6 +1638,7 @@ background:rgba(0,0,0,0.5)!important;
 border:none!important;
 }
 
+
 ::-webkit-scrollbar {
 width:12px;
 }
@@ -1496,7 +1658,7 @@ border-radius:0;
 }
 
 NonTab SignOut a {
-font-size:10pt;
+font-size:14px;
 font-weight:700;
 }
 a {
@@ -1510,7 +1672,7 @@ font-weight:700;
 text-shadow:0 1px 0 #000;
 }
 
-a.BigButton {
+a.BigButton,a.Button.Primary.Action.NewDiscussion.BigButton {
 -moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
 -webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
 background:url(images/contnt.png);
@@ -1518,7 +1680,7 @@ background-repeat:repeat-x;
 border:1px solid #666;
 border-radius:3px 3px 3px 3px;
 box-shadow:2px 2px 3px rgba(0,0,0,0.5);
-color:#87c10b!important;
+color:#cf0!important;
 cursor:pointer;
 display:block;
 font-size:16px;
@@ -1530,7 +1692,7 @@ text-shadow:0 1px 0 #000;
 text-transform: uppercase;
 }
 
-a.BigButton:hover {
+a.BigButton:hover,a.Button.Primary.Action.NewDiscussion.BigButton:hover {
 -moz-box-shadow:0 0 5px #aaa;
 -webkit-box-shadow:0 0 5px #aaa;
 background:url(images/menu_bg2.png);
@@ -1552,7 +1714,7 @@ a.Bookmarking {
 background-position:bottom center;
 }
 
-a.Button, .Button, #Menu a, a.Back, a.Cancel, a.Category, .AttachFileLink a,.Aelia div.Tabs .ui-tabs-nav .ui-tabs-active a, .Aelia div.Tabs > ol li.Active a, .Aelia div.Tabs > ul li.Active a  {
+a.Button, .Button, #Menu a, a.Back, a.Cancel, .MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active, div.Popup a.Close span, div.AttachFileLink a, .EditCommentForm .Buttons .Cancel, .CommentForm .Buttons .Cancel a, .CommentForm .Buttons .Back a, .CommentForm .DraftButton,.CommentForm .WriteButton, .CommentForm .PreviewButton,.ReactButton,select, span.Email a, span.AddComment a,a.NavButton.ProfileButtons.Button-EditProfile,a.ProfileButtons,a.NavButton.MemberButtons,a.NavButton.Handle,.DataList a.Delete,#Content .FilterMenu li a,.Button.Active, .ButtonGroup.Open .Button.Handle, .Button:focus, .Button:active,.Note.Closed.SignInOrRegister a,span.onebit_mp3 embed,.st_fblike_large,.stButton,.ButtonBarMarkupHint b a,.MeButton,.UserBox .PhotoWrap, .MeBox .PhotoWrap{
 -moz-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
 -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.5);
 background: url(images/contnt.png);
@@ -1560,10 +1722,10 @@ background-repeat: repeat-x;
 border: 1px solid #666;
 border-radius: 3px 3px 3px 3px;
 box-shadow: 2px 2px 3px rgba(0,0,0,.5);
-color: #87c10b;
+color: #cf0;
 cursor: pointer;
 display: inline-block;
-font-size: 14px;
+font-size: 12px;
 font-weight: 700;
 margin: 0 0 10px;
 padding: 3px 6px;
@@ -1571,6 +1733,7 @@ text-align: center;
 text-shadow: 0 1px 0 #000;
 background-color: rgba(11, 26, 5,0.6);
 text-transform: uppercase;
+line-height: 1.5;
 }
 
 
@@ -1585,7 +1748,7 @@ padding:6px;
 text-transform: uppercase;
 }
 
-a.Button.SignInPopup:hover,a.Button.ApplyButton:hover,.Button:hover,a.Back:hover,#Menu a:hover,a.Cancel:hover,a.Category:hover,.AttachFileLink a:hover,.ItemContent.Category.Read a:hover,span.Breadcrumb.FirstCrumb a:hover,.Aelia div.Tabs .ui-tabs-nav .ui-tabs-active a:hover, .Aelia div.Tabs > ol li.Active a:hover, .Aelia div.Tabs > ul li.Active a:hover  {
+a.Button.SignInPopup:hover,a.Button.ApplyButton:hover,.Button:hover,a.Back:hover,.MenuItems a:hover, .MenuItems a:link:hover,div.Popup a.Close span:hover,div.AttachFileLink a:hover, .CommentForm .Buttons .Cancel a:hover, .CommentForm .Buttons .Back a:hover,.CommentForm .DraftButton:hover,.CommentForm .DraftButton:hover,.CommentForm .WriteButton:hover, .CommentForm .PreviewButton:hover,.ReactButton:hover,select:hover, span.Email a:hover, span.AddComment a:hover,a.NavButton.ProfileButtons.Button-EditProfile:hover,a.ProfileButtons:hover,a.NavButton.MemberButtons:hover,a.NavButton.Handle:hover,.DataList a.Delete:hover,#Content .FilterMenu li a:hover,.Note.Closed.SignInOrRegister a:hover,span.onebit_mp3:hover embed,.st_fblike_large:hover,.stButton:hover,.ButtonBarMarkupHint b a:hover,.MeButton:hover,.UserBox .PhotoWrap:hover, .MeBox .PhotoWrap:hover,span.Email a:hover,span.AddComment a:hover{
 -moz-box-shadow:0 0 5px #aaa;
 -webkit-box-shadow:0 0 5px #aaa;
 background:url(images/menu_bg2.png);
@@ -1594,7 +1757,14 @@ box-shadow:0 0 5px #aaa;
 color:#fff;
 text-shadow:0 1px 0 #000;
 }
-
+a.Bookmark, a.Bookmarked, a.Bookmarking {
+display: inline-block;
+height: 22px;
+width: 22px;
+float: right;
+position: relative;
+right: -20px;
+}
 a.Close span {
 color:#fff;
 font-family:arial;
@@ -1639,15 +1809,13 @@ background-repeat:no-repeat;
 background-size:cover;
 color:#2e9d01;
 font-weight:700;
-overflow-x:hidden;
-overflow-y:scroll;
 text-shadow:0 1px 0 #000;
 }
 
 body #Head h1 {
 background:transparent;
 border:0;
-display:inline-block;
+display:block;
 font-weight:700;
 margin:0 auto;
 padding:21px 10px 4px 0;
@@ -1790,10 +1958,30 @@ font-size: 12px;
 font-weight: normal;
 margin: 10px 0 0 10px;
 }
-
+body.Dashboard.Plugin #Panel {
+display: none!important;
+}
+body.Dashboard.Plugin #Content {
+margin: 0 auto;
+text-align: center;
+width: 98%!important;
+float: none!important;
+}
+body.Dashboard.Plugin #Foot {
+border: none!important;
+margin: 0 auto;
+padding: 40px 0 70px;
+}
+body.Vanilla.Discussion.Index .PageTitle .Options {
+height: 10px;
+left: -20px;
+}
+body.Vanilla.Discussion.Index .OptionsTitle {
+	position: relative;
+	left: 10px;
+}
 dd.IP a,dt.IP,dd.IP,dt.Visits,dd.Visits,dt.LastActive,dd.LastActive,dd.Joined,dt.Joined {
-display:none;
-visibility:hidden;
+
 }
 
 dd.Name {
@@ -1817,52 +2005,42 @@ position:relative;
 }
 
 input#Form_Go.Button, input#Form_Go.Button:hover {
-border-radius: 14px;
-font-size: 14px;
+border-radius: 12px;
+font-size: 12px;
 font-weight: 700;
 padding: 4px;
 vertical-align: bottom;
 position: relative;
-top: 5px;
+top: 8px;
 background-size: 100% 100%;
 }
-input.DateBox, input.InputBox, input.SmallInput, textarea, input.DateBox:focus, input.InputBox:focus, input.SmallInput, textarea:focus {
-background: url(images/contnt.png) repeat scroll 0 0 rgba(255,255,255,.7);
+input.DateBox, input.InputBox, input.SmallInput, textarea, input.DateBox:focus, input.InputBox:focus, input.SmallInput, textarea:focus, textarea.TextBox {
+background: url(images/contnt.png) repeat scroll 0 0 #0b1a05!important;
 border: 1px solid #666;
-border-radius: 2px 2px 2px 2px;
-color: #000;
+border-radius: 2px;
+color: #afeb73!important;
 font-size: 15px;
 font-weight: 700;
 margin: 0;
 padding: 3px;
-width: 250px;
+width: 100%;
 }
 input#Form_Email,input#Form_Password,input.InputBox.BigInput{
 	color:#000!important;
 }
 
 span embed {
--moz-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
--o-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
--webkit-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
-background:none transparent;
-border:15px solid transparent;
-border-image:url(/Forum/plugins/PlayMP3Links/images/metalborder.png) 55 55 55 55!important;
-border-radius:10px!important;
-height:30px!important;
-width:30px!important;
+height: 30px!important;
+width: 30px!important;
 }
 
-span embed:hover,span embed:focus {
-background:url(images/plasma2.gif)no-repeat!important;
-background-position:center center;
-background-size:35px auto!important;
-box-shadow:none!important;
-}
 
 span.Email a,span.AddComment a {
 color:#87c10b;
-font-size:10pt;
+font-size:12px;
+}
+span.Email a,span.AddComment a:hover {
+font-size:12px;
 }
 
 textarea.MultiComplete {
@@ -1899,7 +2077,7 @@ visibility:hidden;
 ul#Menu li ul li {
 border: none!important;
 float: none;
-font-size: 11pt;
+font-size: 12px;
 margin: 0;
 text-align: left;
 text-shadow: 2px 2px 3px #000;
@@ -1909,16 +2087,16 @@ z-index:9;
 }
 
 ul#Menu li ul li a {
-background:#80b40a;
-border:1px solid #222;
-color:#fff!important;
-font-size:11pt!important;
-font-weight:700;
-margin:0;
-text-align:left!important;
-text-shadow:0 1px 0 #000!important;
-width:100%;
+background: #80b40a;
+border: 1px solid #222;
+color: #fff!important;
+font-size: 12px!important;
+font-weight: 700;
+margin: 0;
+text-shadow: 0 1px 0 #000!important;
+width: 100%;
 text-transform: uppercase;
+line-height: 1!important;
 }
 
 ul#Menu li ul li a:hover {
@@ -1932,12 +2110,22 @@ text-shadow:2px 2px 5px #000!important;
 }
 
 ul.Flyout.MenuItems {
-background:url(images/contnt.png)no-repeat scroll 0 0 rgba(82,82,82,0.3);
+background: url(images/contnt.png)no-repeat scroll 0 0 rgba(82,82,82,0.3);
+width:inherit;
 }
 
-ul.Flyout.MenuItems li a,ul.Flyout.MenuItems li a:hover {
-background:none transparent!important;
-border:none!important;
+ul.Flyout.MenuItems li a, .MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
+display: block;
+margin: 0;
+font-size: 12px;
+background-color:rgba(11, 26, 5, 0.9);
+border: 0;
+}
+ul.Flyout.MenuItems li a:hover {
+display: block;
+margin: 0;
+font-size: 12px;
+background-color:rgba(204, 255, 0,0.4);
 }
 
 ul.MessageList .Meta span.Votes {
@@ -1962,4 +2150,111 @@ font-size: 16px;
 }
 ul.PanelInfo.PanelCategories .Active a{
 	color:#000;
+}
+dl.About{
+width: 100%;
+text-align: left;
+padding: 2px;
+}
+dl.About img.Symbol {
+height: auto;
+width: 20px;
+}
+.flag {
+
+}
+.flag span {
+position: relative;
+margin: 0 -17px;
+visibility: hidden;
+padding: 0;
+border: 1px solid #222;
+font-size: 11px;
+}
+.ContactForm.AjaxForm form{
+	width: 50%;
+margin: 0 auto;
+}
+.stButton .stLarge, .stButton:hover .stLarge:hover {
+display: inline-block;
+height: 28px!important;
+width: 28px!important;
+position: relative;
+background: -2px -2px;
+border-radius: 28px;
+padding: 0;
+top: 0;
+}
+.stButton{
+position: relative;
+z-index: 1;
+text-decoration: none;
+color: #000;
+display: inline-block;
+cursor: pointer;
+margin-right: 3px;
+margin-left: 3px;
+font-size: 11px;
+line-height: 100%;
+border-radius: 28px;
+}
+.st_fblike_large {
+display: inline-block;
+position: relative;
+padding: 5px 0 0;
+top: 0!important;
+left: -5px!important;
+}
+
+.Flyout:before, .Flyout:after {
+border-bottom: 0;
+border-left: 0;
+border-right:;
+content: initial;
+left: 9px;
+position: absolute;
+top: -7px;
+}
+.FlyoutMenu a {
+color:#000;
+text-shadow: none;
+}
+.OptionsMenu .Flyout {
+top: 10px;
+right: -35px;
+position: absolute;
+min-width: 135px;
+}
+.MeBox .Flyout.MenuItems {
+right: inherit;
+left: -4px;
+top: 150%;
+}
+.MeBox .Flyout {
+right: 0;
+left: -30px!important;
+top: 20px!important;
+width: 145px;
+}
+.PopList .Item {
+padding: 0;
+position: relative;
+overflow: hidden;
+border-bottom: 1px solid #ddd;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+background: #80b80c;
+}
+.PopList .ItemContent {
+margin: 0 4px;
+line-height: 1.4;
+}
+
+div#stOverlay{
+background-color:rgba(0, 0, 0,0);
+}
+table.gadget tbody tr td iframe#387741977 #documet html body,table.gadget tbody tr td iframe#387741977 #documet html body div#msg_div{
+background-color: transparent!important;
+}
+input#Form_Email, input#Form_Password, input.InputBox.BigInput {
+color:#cf0!important;
 }
